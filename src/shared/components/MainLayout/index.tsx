@@ -1,12 +1,10 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { Header } from '../Header';
 
 export const MainLayout: React.FC = () => {
   return (
     <div>
-      <nav className="p-4 bg-gray-200">
-        <Link to="/" className="mr-4">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
+      <Header />
       <main className="p-4">
         <Outlet />
       </main>
