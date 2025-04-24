@@ -5,7 +5,7 @@ export const MainLayout: React.FC = () => {
   return (
     <div>
       <Header />
-      <main className="p-4">
+      <main className="mx-auto">
         <Outlet />
       </main>
     </div>
