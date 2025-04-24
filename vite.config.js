@@ -11,6 +11,13 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3005
+    port: 3005,
+    cors: true,
+    allowedHosts: ['loyahub.com.br'],
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+      'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
+    }
   }
 })
